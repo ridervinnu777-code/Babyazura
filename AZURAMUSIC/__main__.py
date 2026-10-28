@@ -15,7 +15,6 @@ import importlib
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 import config
-from config import BANNED_USERS
 from AZURAMUSIC import LOGGER, app, userbot
 from AZURAMUSIC.core.call import AZURA
 from AZURAMUSIC.misc import sudo
@@ -33,15 +32,15 @@ async def init():
         LOGGER(__name__).error("𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐅𝐢𝐥𝐥𝐞𝐝, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐢𝐥𝐥 𝐀 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐒𝐞𝐬𝐬𝐢𝐨𝐧")
         exit()
     await sudo()
-        try:
+    try:
         users = await get_gbanned()
         for user_id in users:
             BANNED_USERS.add(user_id)
         users = await get_banned_users()
         for user_id in users:
             BANNED_USERS.add(user_id)
-    except Exception as e:
-        LOGGER(__name__).error(f"Banned users load nahi hue: {e}")
+    except:
+        pass
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("AZURAMUSIC.plugins" + all_module)
