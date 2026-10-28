@@ -8,9 +8,9 @@ from pyrogram import filters
 load_dotenv()
 
 # Required credentials
-API_ID = int(getenv("API_ID" ))
-API_HASH = getenv("API_HASH" )
-BOT_TOKEN = getenv("BOT_TOKEN" , None)
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Bot and owner info
 OWNER_USERNAME = getenv("OWNER_USERNAME", "vinnu_exe")
@@ -24,8 +24,8 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Limits and IDs
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
-LOGGER_ID = int(getenv("LOGGER_ID", -1004292883487))
-OWNER_ID = int(getenv("OWNER_ID", 8828377643))
+LOGGER_ID = int(getenv("LOGGER_ID", -1004466672938))
+OWNER_ID = int(getenv("OWNER_ID", 7450836393))
 
 # Heroku
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -91,7 +91,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", getenv("LOGGER_ID", "0")))
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", SUPPORT_CHAT)
 
 # Image URLs
-SHASHANK_IMG = getenv("SHASHANK_IMG", "https://iili.io/nkMQ2F2.jpg").split(",") if "," in getenv("SHASHANK_IMG", "") else [getenv("SHASHANK_IMG", "https://iili.io/nkMQ2F2.jpg")]
+SHASHANK_IMG = getenv("SHASHANK_IMG", "https://i.ibb.co/yFHCgpRG/p5-Vg-N6-Au.jpg").split(",") if "," in getenv("SHASHANK_IMG", "") else [getenv("SHASHANK_IMG", "https://i.ibb.co/yFHCgpRG/p5-Vg-N6-Au.jpg")]
 
 START_IMG_URL = getenv("START_IMG_URL", "https://iili.io/nkMQ2F2.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL", "https://iili.io/nkMQ2F2.jpg")
@@ -101,10 +101,11 @@ TELEGRAM_AUDIO_URL = "https://iili.io/nkMQ2F2.jpg"
 TELEGRAM_VIDEO_URL = "https://iili.io/nkMQ2F2.jpg"
 STREAM_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
 SOUNCLOUD_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
-YOUTUBE_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
+YOUTUBE_IMG_URL = "hhttps://iili.io/nkMQ2F2.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://iili.io/nkMQ2F2.jpg"
+
 
 # Helper function
 def time_to_seconds(time: str) -> int:
